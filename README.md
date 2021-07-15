@@ -29,7 +29,8 @@ Contributors names and contact info
 Jones
 
 ## Version History
-
+* 0.2
+   * Adjusted word colors
 * 0.1
     * Initial Release
 
