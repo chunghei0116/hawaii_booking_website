@@ -14,10 +14,36 @@ h6 {
   font-weight: normal;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(36, 161, 199);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(183, 199, 204);
+}
+
 header {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: white;
+  box-shadow: 3px 3px 5px 1px rgb(124, 124, 124);
+
   div.logo {
     display: flex;
     align-items: center;
@@ -113,11 +139,20 @@ main {
         justify-content: space-around;
         padding: 1rem;
         flex: 1 1 300px;
-        img {
+        div.imagecontainer {
+          overflow: hidden;
           width: 15vw;
           height: 15vw;
           border-radius: 50%;
-          margin: 1rem 0rem;
+          img {
+            width: 15vw;
+            height: 15vw;
+            border-radius: 50%;
+            transition: 0.2s;
+          }
+          img:hover {
+            transform: scale(1.2);
+          }
         }
         h4 {
           font-size: 2rem;
