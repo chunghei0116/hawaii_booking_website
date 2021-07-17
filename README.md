@@ -10,7 +10,7 @@ This time I try on my own to write my first website with HTML and SCSS.
 
 ## Getting Started
 
-Simply click on [HawaiiBooking](https://chunghei0116.github.io/hawaiibookingwebsite/)
+Simply click on [HawaiiBooking](https://chunghei0116.github.io/hawaii_booking_website/)
 
 ### Dependencies
 
