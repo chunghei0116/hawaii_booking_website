@@ -15,6 +15,26 @@ h6 {
   font-weight: normal;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #24a1c7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b7c7cc;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,6 +44,13 @@ header {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 5px 1px #7c7c7c;
+          box-shadow: 3px 3px 5px 1px #7c7c7c;
 }
 
 header div.logo {
@@ -166,11 +193,24 @@ main section.second section.cards div.card {
           flex: 1 1 300px;
 }
 
-main section.second section.cards div.card img {
+main section.second section.cards div.card div.imagecontainer {
+  overflow: hidden;
   width: 15vw;
   height: 15vw;
   border-radius: 50%;
-  margin: 1rem 0rem;
+}
+
+main section.second section.cards div.card div.imagecontainer img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+main section.second section.cards div.card div.imagecontainer img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 main section.second section.cards div.card h4 {
